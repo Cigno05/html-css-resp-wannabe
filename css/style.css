@@ -130,18 +130,42 @@ img {
 
 /* DESKTOP FIRST */
 
-@media (max-width: 1903px) { 
+
+/* bonus */
+@media (max-width: 1160px) { 
     
+    :is(.lessons, .steps, .why-us) :is(.container){
+        max-width: 1160px;
+        width: 100%;
+    }
 }
+/* bonus */
 
-
+/* TABLET */
 @media (max-width: 768px) { 
     
+    :is(.lessons, .steps, .why-us) :is(.container){
+        max-width: 768px;
+        width: 100%;
+    }
 }
 
-
+/*  SMARTPHONE */
 @media (max-width: 480px) { 
-    
+
+    :is(.lessons, .steps, .why-us) :is(.container) {
+        max-width: 480px;
+        width: 100%;
+    }
+
+    .row {
+        display: block;
+    }
+
+    :is(.lessons, .steps, .why-us) :is(.col) {
+        width: 100%;
+        margin-bottom: 50px;
+    }
 }
 
 
