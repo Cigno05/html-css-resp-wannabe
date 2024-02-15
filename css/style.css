@@ -159,14 +159,31 @@ img {
     }
 
     .row {
-        display: block;
+        flex-wrap: wrap;
+        gap: 50px;
     }
 
     :is(.lessons, .steps, .why-us) :is(.col) {
         width: 100%;
-        margin-bottom: 50px;
+        display: flex;
+        
+    }
+
+    :is(.lessons, .steps, .why-us) :is(.card) {
+        
+    }
+
+    .why-us {
+        background-color: #222222;
+        padding-top: 50px;
+        margin-bottom: 0;
+    }
+
+    .steps {
+        margin-bottom: 0;
     }
 }
+
 
 
 
